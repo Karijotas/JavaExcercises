@@ -12,7 +12,7 @@ public class PuodeliaiDezuteje {
 
         pilnos = puodeliai / dezuteje;
         puodeliuDezuteje = pilnos * dezuteje;
-        like = puodeliai -puodeliuDezuteje;
+        like = puodeliai%dezuteje;
         System.out.println("Pilnu dezuciu skaicius: " + pilnos);
         System.out.println("Nesupakuotu puodeliu skaicius: "+ like);
     }
