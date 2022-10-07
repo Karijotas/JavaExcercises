@@ -8,8 +8,8 @@ public class EglutesAukstis {
             int i = 1;
             int counter = 0;
             System.out.println("Kiek egluciu atvezta? ");
-            double kiekis = Double.valueOf(scanner.nextLine());
-            double[] eglutes = new double[(int)kiekis];
+            int kiekis = Integer.valueOf(scanner.nextLine());
+            double[] eglutes = new double[kiekis];
             while(i<=kiekis){
                 System.out.println("Iveskite "+i+" eglutes auksti:");
 
