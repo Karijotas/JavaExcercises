@@ -10,18 +10,10 @@ public class Kelione {
         System.out.println("Iveskite kuro sanaudas: ");
         int sanaudos = Integer.valueOf(scanner.nextLine());
 
-        int counter = talpa;
-       for (int i = 0; counter>=0;++i) {
-           if (i%2 !=0){
-               counter -= (2*sanaudos);
-               ++i;
-           }
-                counter -= sanaudos;
-                ++i;
-                sum = i;
+        int kurasPerDviDienas = sanaudos + (2*sanaudos);
+        int vienaDien = kurasPerDviDienas / 2;
+        sum = talpa / vienaDien;
 
-        }
         System.out.println(sum);
-
     }
 }
