@@ -29,13 +29,9 @@ public class Moliugai {
 
         double avgWeight = Arrays.stream(moliugai).average().getAsDouble();
         double atrinkti = getCountOfValueFromArray(moliugai, lowest, highest);
-        double[] atrinkti1 = new double[getCountOfValueFromArray(moliugai, lowest, highest)];
-
         System.out.println("Visų moliūgų vidutinis svoris: " + avgWeight + " kg");
         System.out.println("Į supirkimą atrinkta moliūgų: " + df.format(atrinkti));
         System.out.println("Vidutinis atrinkto moliūgo svoris: " + df.format(Arrays.stream(newArray(moliugai, lowest, highest)).average().getAsDouble())+ " kg");
-
-        System.out.println();
     }
 
     private static double[] newArray(double[] arr, double n, double h) {
@@ -46,15 +42,9 @@ public class Moliugai {
                 Array[count] = each;
                 ++count;
             }
-
-
         }
         return Array;
     }
-
-
-
-
     private static int getCountOfValueFromArray(double[] arr, double n, double h) {
         int count = 0;
         for (double each : arr) {
