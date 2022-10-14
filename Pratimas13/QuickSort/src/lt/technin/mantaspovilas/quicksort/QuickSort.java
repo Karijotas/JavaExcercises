@@ -10,7 +10,7 @@ public class QuickSort {
     private static Random rnd = new Random();
 
     public static void main(String[] args) {
-        int[] data = new int[5000000];
+        int[] data = new int[500000000];
         countTime(data, 1);
 //        System.out.println(Arrays.toString(data));
         countTime(data, 2);
