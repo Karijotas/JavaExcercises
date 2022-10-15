@@ -1,6 +1,5 @@
 package lt.technin.mantaspovilas.quicksort;
 
-import javax.swing.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
