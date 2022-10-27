@@ -30,7 +30,7 @@ public class Account {
             System.out.println("Not enough money!");
         } else {
             this.balance = newBalance;
-            System.out.println("Withdrawed "+ money + "amount from your account");
+            System.out.println("Withdrawed "+ money + " amount of money from your account");
         }
     }
 }
