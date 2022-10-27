@@ -2,20 +2,14 @@ package lt.techin.mantaspovilas.converttohex;
 
 public class ConvertToHex {
 
-    String charToHex;
-    public ConvertToHex(){
-    }
 
-    public void converter(String str){
+
+    public static String converter(String str){
         StringBuilder sb = new StringBuilder();
-
         char[] arr = str.toCharArray();
-
         for (char c : arr){
-            charToHex = Integer.toHexString(c);
-            sb.append(charToHex);
+            sb.append(Integer.toHexString(c));
         }
-
-        System.out.println(sb.toString());
+        return sb.toString();
     }
 }
