@@ -1,6 +1,6 @@
 package lt.techin.mantaspovilas;
 
-public class Product {
+public class Product implements ShoppingCartItem{
 
     private String name;
     private double price;

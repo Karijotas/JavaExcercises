@@ -1,6 +1,6 @@
 package lt.techin.mantaspovilas;
 
-public class Newspapers extends Product{
+public class Newspapers extends Product {
 
     private double PVM;
 
@@ -18,5 +18,6 @@ public class Newspapers extends Product{
     public double getPriceWithPVM() {
         return getPrice() * PVM;
     }
+
 
 }
