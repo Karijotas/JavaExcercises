@@ -12,6 +12,17 @@ public class AbstractAccount {
     public BigDecimal getBalance() {
         return balance;
     }
+
+    public void withdraw(double amount){
+        BigDecimal newbalance = balance.subtract(BigDecimal.valueOf(amount));
+        if (newbalance.signum() == 1){
+            this.balance = newbalance.subtract(BigDecimal.valueOf(amount));
+        } else {
+            System.out.println("Not enough money to withdraw!");
+        }
+
+
+    }
     @Override
     public String toString() {
         return "AbstractAccount{" +

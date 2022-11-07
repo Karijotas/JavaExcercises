@@ -9,6 +9,7 @@ public class Client {
     private String type;
 
 
+
     private ArrayList<AbstractAccount> accounts = new ArrayList<>();
 
     public Client(String name, String type) {
@@ -22,8 +23,13 @@ public class Client {
     }
 
     public void getAccounts(){
+        int index = 0;
         for (AbstractAccount account : accounts){
+            System.out.print(index+" ");
             System.out.println(account);
+            index++;
         }
+//
+//        public void
     }
 }
