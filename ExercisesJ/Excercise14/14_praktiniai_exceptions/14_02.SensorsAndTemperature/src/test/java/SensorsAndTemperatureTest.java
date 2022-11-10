@@ -8,7 +8,8 @@ import java.util.Set;
 import java.util.TreeSet;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import application.Sensor;
+import application.*;
+
 
 public class SensorsAndTemperatureTest<_Sensor> {
 
