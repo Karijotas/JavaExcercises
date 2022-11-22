@@ -4,6 +4,7 @@ public class main {
 
         greeter.greet("Mantas", "Povilas");
         greeter.changeStrategy(new EnglishGreetingStrategy());
+        System.out.println("");
         greeter.greet("Mantas", "Povilas");
 
     }
