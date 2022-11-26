@@ -4,7 +4,9 @@ import lt.itakademija.exam.Exercises;
 import lt.itakademija.exam.IntegerGenerator;
 import lt.itakademija.exam.NumberFilter;
 
+import java.lang.reflect.Array;
 import java.util.*;
+import java.util.stream.Collectors;
 
 
 public class ExercisesImpl implements Exercises {
@@ -40,18 +42,21 @@ public class ExercisesImpl implements Exercises {
 
     @Override
     public int computeSumOfNumbers(int i) {
-    
-        return 0;
+        return NumberGenerator.getNext(i);
     }
 
     @Override
     public int computeSumOfNumbers(int i, NumberFilter numberFilter) {
-        return 0;
+        return NumberGenerator.getNext(i, numberFilter);
     }
 
     @Override
     public List<Integer> computeNumbersUpTo(int i) {
-        return null;
+        ArrayList<Integer> newList = new ArrayList<>();
+        for (int j = 1; j < i; j++ ){
+            newList.add(j);
+        }
+        return newList;
     }
 
     @Override
@@ -66,6 +71,6 @@ public class ExercisesImpl implements Exercises {
 
     @Override
     public IntegerGenerator createFilteredIntegerGenerator(IntegerGenerator integerGenerator, NumberFilter numberFilter) {
-        return new NumberGenerator(1, 3, numberFilter);
+        return new NumberGenerator(1, 100);
     }
 }

@@ -8,13 +8,9 @@ public class NumberGenerator implements IntegerGenerator {
     private int i = 1;
     private int from;
     private int to;
-    private Filter filter;
+    private NumberFilter filter;
 
-    public NumberGenerator(int from, int to, NumberFilter filter) {
-        this.from = from;
-        this.to = to;
 
-    }
 
     public NumberGenerator(int from, int to) {
         this.from = from;
@@ -23,8 +19,27 @@ public class NumberGenerator implements IntegerGenerator {
 
     @Override
     public Integer getNext() {
+        while (i < to) {
+            return i++;
+        }
+      return null;
+    }
+
+    public static Integer getNext(int to) {
+        int i = 0;
         while (i <= to) {
             return i++;
+        }
+        return null;
+    }
+
+    public static Integer getNext(int to, NumberFilter filter) {
+        int i = 0;
+        while (i <= to) {
+            if (true){
+                return i++;
+            }
+
         }
         return null;
     }
