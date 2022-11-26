@@ -3,16 +3,22 @@ package lt.techin.mantaspovilas.bankosaskaita;
 import java.math.BigDecimal;
 
 public class Account {
-    private final String IBAN_NUMBER = "";
-    private final String ACCOUNT_OWNER = "";
+    private static String number;
+    private String owner;
     private BigDecimal balance = new BigDecimal(0.0);
 
+    public Account(String owner) {
+        this.owner = owner;
+        getBalance();
+        number = IbanGenerator.generate();
+    }
+
     public String getIBAN_NUMBER() {
-        return IBAN_NUMBER;
+        return number;
     }
 
     public String getACCOUNT_OWNER() {
-        return ACCOUNT_OWNER;
+        return this.owner;
     }
 
     public BigDecimal getBalance() {
