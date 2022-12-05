@@ -1,7 +1,7 @@
-package lat.techin.mantaspovilas.bankas;
+package lt.techin.mantaspovilas;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
+
 
 
 public class Main {
@@ -25,7 +25,7 @@ public class Main {
         System.out.println("");
         account1.depositMoney(BigDecimal.valueOf(31));
         System.out.println("");
-        Exchange.exchangeToEuros(BigDecimal.valueOf(30), account1, account);
+        Transaction.transferToEur(BigDecimal.valueOf(30), account1, account);
         System.out.println("");
         System.out.println(account);
         System.out.println("");

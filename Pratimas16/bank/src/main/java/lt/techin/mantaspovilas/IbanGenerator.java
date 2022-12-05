@@ -1,4 +1,4 @@
-package lat.techin.mantaspovilas.bankas;
+package lt.techin.mantaspovilas;
 
 import java.util.Random;
 
