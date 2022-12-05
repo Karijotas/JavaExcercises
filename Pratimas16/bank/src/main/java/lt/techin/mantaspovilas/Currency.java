@@ -8,6 +8,7 @@ public enum Currency {
     private String currency;
     private BigDecimal conversionRate;
 
+
     Currency(String currency, BigDecimal conversionRate) {
         this.currency = currency;
         this.conversionRate = conversionRate;
