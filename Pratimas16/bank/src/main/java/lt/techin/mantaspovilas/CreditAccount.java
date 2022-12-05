@@ -1,8 +1,14 @@
 package lt.techin.mantaspovilas;
 
 import java.math.BigDecimal;
+/**
+ * Makes credit bank accounts, generates IBAN number.
+ * Accounts can be in EUR or USD
+ * Has a credit limit ceiling
+ */
 
 public class CreditAccount extends Account {
+
 
     private BigDecimal limit;
 

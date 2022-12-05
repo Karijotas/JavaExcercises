@@ -8,7 +8,7 @@ import org.junit.Test;
 import java.math.BigDecimal;
 
 /**
- * Unit test for simple App.
+ * Unit test for Banking exercise.
  */
 public class BankTest
 {

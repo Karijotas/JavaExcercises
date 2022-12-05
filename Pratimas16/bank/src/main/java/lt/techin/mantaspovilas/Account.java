@@ -2,7 +2,10 @@ package lt.techin.mantaspovilas;
 
 import java.math.BigDecimal;
 
-
+/**
+ * Makes bank accounts, generates IBAN number.
+ * Accounts can be in EUR or USD
+ */
 public class Account {
 
 
@@ -12,6 +15,12 @@ public class Account {
  private BigDecimal balance = new BigDecimal(0.0);
  private Currency currency;
 
+ /**
+  *
+  * @param ownerName
+  * @param ownerSurname
+  * @param currency
+  */
  public Account(String ownerName, String ownerSurname, Currency currency) {
  this.ownerName = ownerName;
  this.ownerSurname = ownerSurname;
@@ -33,11 +42,19 @@ public class Account {
  return balance;
  }
 
+ /**
+  *
+  * @param money
+  */
  public void depositMoney(BigDecimal money) {
  BigDecimal newBalance = balance.add(money);
  this.balance = newBalance;
  }
 
+ /**
+  *
+  * @param money
+  */
  public void withdrawMoney(BigDecimal money) {
  BigDecimal newBalance = balance.subtract(money);
  if (newBalance.compareTo(BigDecimal.ZERO) < 0) {

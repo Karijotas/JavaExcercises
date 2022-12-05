@@ -1,13 +1,21 @@
 package lt.techin.mantaspovilas;
 
 import java.util.Random;
-
+/**
+ * Generates a Lithuanian IBAN number, randomly.
+ */
 public class IbanGenerator {
+
+
 
     private static final String countryCode = "LT";
     private static String bankCode = "5000 5";
     private static String ibanNumber;
 
+    /**
+     *
+     * @return an IBAN number
+     */
     public static String generate() {
         StringBuilder sb = new StringBuilder();
         Random rnd = new Random();
